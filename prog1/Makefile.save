@@ -1,0 +1,17 @@
+######## start of Makefile #########
+#author: ZhangpengLiao
+#prog1
+
+
+.PHONY: all classes clean
+
+.java.class:
+	javac $(JFLAGS) $*.java
+all: classes
+
+classes: *.java
+	m
+clean:
+	$(RM) *.class
+
+####### end of Makefile #######
